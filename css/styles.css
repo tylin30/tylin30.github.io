@@ -34,6 +34,13 @@ body{font-family:'Lato', sans-serif;font-size:16px}body.active{overflow:hidden;z
 #lead-content a{padding:10px 20px}
 #lead-down{display:none}.education-block h3,.education-block span{float:none}.project-image{display:none}.project-info{position:relative;margin:0;padding:30px 15px;top:auto;transform:none}footer{text-align:center}.social{text-align:center}}@media only screen and (max-width: 480px){#lead-content h1{font-size:1.5em}#lead-content h2{font-size:1em}#lead-content a{font-size:0.9em;padding:5px 10px}}
 
+
+#keywords .heading{position:relative;display:inline-block;font-size:1em;font-weight:300;margin:0 0 15px 0}
+#keywords .heading:after{position:absolute;content:'';top:100%;height:1px;width:20px;left:0;right:0;margin:0 auto;background:#3498db}
+
+#keywords ul{display:block;margin:0 auto;padding:0;max-width:800px}
+#keywords li{display:inline-block;margin:7px;padding:5px 10px;color:#374054;background:#e4e4ea;list-style:none;cursor:default;font-size:1em}
+
 .btn{font-size:16px}
 
 .modal-title{font-size:16px}
@@ -60,3 +67,4 @@ body{font-family:'Lato', sans-serif;font-size:16px}body.active{overflow:hidden;z
 }
 #awardsandscholarships{padding:50px 15px;text-align:center}
 #courses{padding:50px 15px;text-align:center}
+#extracurricular{padding:50px 15px;text-align:center}
