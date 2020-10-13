@@ -232,6 +232,12 @@
                         <h3>FB Big Data Analysis</h3>
                         <p>
                             利用機器學習分析1900萬筆FB使用者資料，了解臺灣極具討論度之社會議題（死刑存廢、臺灣統獨、同婚與否、核能存廢）的同溫層現象以及其與政黨、媒體的關係。
+                            <br>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="http://slides.com/yun-chenchien/deck-1/fullscreen">Our Slides</a>
+                            <br>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://github.com/tylin30/DSR_Shiny">Shiny Source Code</a>
+                            <br>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://shot67890.shinyapps.io/DSRshiny_upload/">Visit Our R Shiny Website</a><br>
                         </p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fb_bigdata">
@@ -255,13 +261,13 @@
                                     <!-- Links -->
                                     <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="http://slides.com/yun-chenchien/deck-1/fullscreen">Our Slides</a></h5>
                                     <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://github.com/tylin30/DSR_Shiny">Shiny Source Code</a></h5>
-                                    <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://shot67890.shinyapps.io/DSRshiny_upload/">Visite Our R Shiny Website</a><br></h5>
+                                    <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://shot67890.shinyapps.io/DSRshiny_upload/">Visit Our R Shiny Website</a><br></h5>
                                     
                                     <!-- Title -->
                                     <h2 >Facebook 同溫層有多厚？</h2>
                                     
                                     <!-- Intro -->
-                                    <h4 style="text-align: left;">Intro</h4>
+                                    <h3 style="text-align: left;">Intro</h3>
                                     <div style="text-align: left;">
                                         同溫層現象 (homophily) 意指對於議題有相似看法、相似教育程度、相似成長背景的個
                                     體，匯聚的現象。心理學家認為，人們會傾向降低認知失調(cognative dissonance)，較願意與特質和想法與自己
@@ -277,9 +283,9 @@
                                     <br>
 
                                     <!-- Method -->
-                                    <h4 style="text-align: left;">Methods</h4>
+                                    <h3 style="text-align: left;">Method</h3>
                                     <br>
-                                        <h5 style="text-align: left;">Data Preparation</h5>
+                                        <h4 style="text-align: left;"><b>1. Data Preparation</b></h4>
                                         <div style="text-align: left;">
                                             特別感謝經濟系林明仁教授授權我們使用其研究計畫部分資料（QSearch）。
                                             資料內容為 2016 年 3 月在台灣臉書公開粉絲專頁貼文按讚的資料，
@@ -292,21 +298,26 @@
                                             （挺廢死、反廢死、挺同、反同、擁核、反核、統一、獨立）的粉絲專頁，再藉由爬蟲粉絲專
                                             頁互相的按讚行為，來找出其他可以代表八個面向的粉絲專頁。
                                         </div>
+                                        <br>
                                         <div>
                                             <img src="images/projects/FB_data.png"> 
+                                            <div style="text-align: center;">Figure1. Raw Data</div>
                                         </div>
-                                        <h5 style="text-align: left;">Data Preprocessing</h5>
+                                        <br>
+                                        <h4 style="text-align: left;"><b>2. Data Preprocessing</b></h4>
                                         <div style="text-align: left;">
                                             我們將使用者在八大面向粉絲專頁貼文中的按讚數以對該議題按讚數的 z-score 進行
                                             標準化後，將資料整理為以使用者為 index 的八個維度的座標資料，整理成下表形式：
                                         </div>
                                         <br>
+                                        <div>
                                             <img src="images/projects/FB_datapreprocessing.png"> 
+                                            <div style="text-align: center;">Figure2. Data Format</div>
+                                        </div>
                                         <br>
                                         <br>
                                         <br>
-                                        <h5 style="text-align: left;">Cluster Analysis</h5>
-                                        <br>
+                                        <h4 style="text-align: left;"><b>3. Cluster Analysis</b></h4>
                                         <div style="text-align: left;">
                                             我們採用集群分析的方式，透過非摺疊群集法 (nonhierarchical clustering) 中的
                                             k-means 演算法將使用者進行分群。集群分析中的相似性測度 (similarity measure)，採用 R
@@ -315,62 +326,105 @@
                                             透過組內總平方和 (total within sum of square)來輔助判斷較佳的分群數，在此將群集訂為10群。
                                         </div>
                                         <br>
+                                        <div>
                                             <img src="images/projects/FB_cluster_number.png"> 
-                                        <br>
-                                        <div style="text-align: left;">
-                                             我們透過各群集按讚的粉絲專頁性質（見粉專按讚Top50，在此展示兩例），進行群集的人工標記，得到了
-                                             反同(Homophobia)、不關心議題、熱衷死刑議題、挺同(GayMarriage)、支持死刑(Penalty)、
-                                             廢死(EndPenalty)、挺核(Nuclear)、反核(Antinuclear)、獨立(Independence)、統一(Reunification)，並做相關分析。
-                                             
+                                            <div style="text-align: center;">Figure3. Scree Plot</div>
                                         </div>
                                         <br>
+                                        <div style="text-align: left;">
+                                             我們透過各群集按讚的粉絲專頁性質，進行群集的人工標記，得到了
+                                             反同(Homophobia)、不關心議題、熱衷死刑議題、挺同(GayMarriage)、支持死刑(Penalty)、
+                                             廢死(EndPenalty)、挺核(Nuclear)、反核(Antinuclear)、獨立(Independence)、統一(Reunification)，並做相關分析，
+                                             同時比較各群體在政黨以及媒體閱讀上的差異。
+                                        </div>
+                                        <!-- <br>
                                             <img  src="images/projects/FB_top50_1.png"> 
-                                            <div><b style="text-align: center;">Cluster1 (反核) 之粉專按讚Top50 </b></div>
+                                            <div><b style="text-align: center;">Figure4. Cluster1 (反核) 之粉專按讚Top50 </b></div>
                                         <br>
                                         <br>
                 
                                         <img src="images/projects/FB_top50_2.png"> 
-                                            <div><b style="text-align: center;">Cluster2 (不關心議題) 之粉專按讚Top50 </b></div>
+                                            <div><b style="text-align: center;">Figure5. Cluster2 (不關心議題) 之粉專按讚Top50 </b></div>
                                         <br>
                                         <br>
                                             <img src="images/projects/FB_cor_matrix.png"> 
-                                        <br>
+                                        <br> -->
                                         
 
                                         <div>
                                         
-                                        <h4 style="text-align: left;">Results</h4>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h3 style="text-align: left;">Main Results</h3>
+                                        <br>
                                         <div style="text-align: left;">
                                         <b>1. 議題很小眾，絕大多數人在議題上未明顯表態。(6000人 vs 330000人)</b>
                                         </div>
                                         <img src="images/projects/FB_result_1.png"> 
+                                        <div style="text-align: center;">Figure4. 大多數人在議題上未明顯表態</div>
+
                                         <br>
                                         <br>
                                         <div style="text-align: left;">
                                             <b>2. 非二元對立同溫層，而是很多個議題泡泡同溫層。(Check it out on our Shiny website &#128512; )    </b>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                相關分析顯示，大多數的相關不達統計顯著，其於數值最高之相關係數僅達-0.14（於反同/獨立）（Figure5）。
+                                                <img src="images/projects/FB_cor_matrix.png">
+                                                <div style="text-align: center;">Figure5. 相關分析</div>
+                                            </div>
+                                            
                                         </div>
-                                        <iframe src="https://www.youtube.com/embed/bMre7NM_WvI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <br>
+                                        
+                                            <div style="text-align: left;">
+                                                <br>
+                                                從其中一個3D的圖表中亦顯示，在各著軸之間的平面鮮少有座標點，意即各個議題立場之間近乎獨立沒有關聯（Figure6）。
+                                            </div>
+
+                                                <iframe src="https://www.youtube.com/embed/bMre7NM_WvI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div style="text-align: center;">Figure6. 3D plot on our shiny website</div>
+                                        
                                         <br>
                                         <br>
                                         <div style="text-align: left;">
-                                            <b>3. 超越傳統政黨藍綠二分的議題</b>
+                                            <b>3. 有些議題超越藍綠兩黨</b>
+                                            <br>
+                                            <br>
+                                            以各群體為x軸，支持度為y軸的圖表上，我們可以很明顯看到，支持臺獨群體對民進黨支持度高，支持統一群體對國民黨支持度高。
+                                            不過，我們也看到反對核能、支持核能的群體在對國民黨的支持度是差不多的。
+                                            死刑存廢議題，無論正反立場，對藍綠兩黨以及時代力量的支持度都不高。以核能、死刑兩項議題來說已超脫黨派，與政黨支持之關聯較小。
                                         </div>
                                             <img src="images/projects/FB_result_3.png"> 
+                                            <div style="text-align: center;">Figure7. 各群體對黨派支持度</div>
+                                        <br>
+                                        <br>
                                         <br>
                                         <div style="text-align: left;">
                                             <b>4. 不同同溫層閱讀不同的媒體</b>
+                                            <br>
+                                            <br>
+                                            以各群體為x軸，支持度為y軸的圖表上，我們看到傳統被認為是綠媒(e.g.: 三立、自由時報)的媒體吸引了臺獨群體的支持；
+                                            不過異常的是，支持獨立的群題則在各大媒體的偏好程度皆不高，推測可能這個該群體接收媒體訊息主要並非來自facebook（Figure8）。
+                                            而其他新媒體（e.g.: 新唐人、新頭殼、風傳媒），則吸引所有「進步價值」的群體（Figure9）。
                                         </div>
                                         <img src="images/projects/FB_result_4_1.png"> 
+                                        <div style="text-align: center;">Figure8. 各群體對媒體支持度1</div>
+                                        <br>
                                         <img src="images/projects/FB_result_4_2.png"> 
+                                        <div style="text-align: center;">Figure9. 各群體對媒體支持度2</div>
 
 
-
-                                        <h4 style="text-align: left;">References</h4>
+                                        <br>
+                                        <br>
+                                        <h3 style="text-align: left;">References (Selected)</h3>
                                         <li style="text-align: left;">Mutz, D. C., & Martin, P. S. (2001). Facilitating communication across lines of political difference:The role of mass media. American Political Science Review, 95(1), 97–114.</li>
                                         <li style="text-align: left;">Sunstein, C. R. (2001). Republic.com. Princeton, NJ: Princeton University Press.</li>
                                         <li style="text-align: left;">Stroud, N. J. (2010). Polarization and partisan selective exposure. Journal of Communication, 60(3), 556–576. doi:10.1111/j.1460-2466.2010.01497.x.</li>
                                         <br>
-                                        <h4 style="text-align: left;">Acknowledge</h4>
+                                        <h3 style="text-align: left;">Acknowledge</h3>
                                         <div style="text-align: left;">謝謝臺大語言所謝舒凱教授指導，謝謝臺大經濟系林明仁教授提供Qsearch資料，
                                             謝謝莊昀軒、丁麒文、簡韻真、尤筱筑、黃詩媛和曾楷惪，我們一起完成了這份研究。</div>
                                     
