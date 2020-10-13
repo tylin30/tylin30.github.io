@@ -46,8 +46,16 @@ body{font-family:'Lato', sans-serif;font-size:16px}body.active{overflow:hidden;z
 }
 
 .modal-content{
-  width:200%
+  /* width:200% */
 }
 
+#project iframe{
+  width:100%;
+  height:315px;
+}
+
+#projects img{
+  width: 100%;
+}
 #awardsandscholarships{padding:50px 15px;text-align:center}
 #courses{padding:50px 15px;text-align:center}
