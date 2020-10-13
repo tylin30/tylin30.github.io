@@ -581,11 +581,13 @@
                     </div>
                 <!-- End .project-image -->
                 <div class="project-info">
-                    <h3>Twitter Big Data Analysis (MPI)</h3>
+                    <h3>Big Data Parallel Analysis (MPI)</h3>
                     <p>
                         This project aims for implementing a simple, <b>parallelized</b> application leveraging <b>High-Performance Computing(HPC)</b> facility —— SPARTAN.
                                 The application will analysis 20GB data from Twitter to identify the top10 most frequenly occurring hashtags 
                                 and the languages most commonly used for tweeting.
+                                <br>
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://github.com/tylin30/Twitter_Analysis_mpi">Source Code</a>
                     </p>
                <!-- Button trigger modal -->
                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mpi">
@@ -597,7 +599,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">Twitter Big Data Analysis (MPI)</h5>
+                      <h5 class="modal-title">Big Data Parallel Analysis (MPI)</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -607,7 +609,7 @@
                         <p class="mb-5">
                             <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="https://github.com/tylin30/Twitter_Analysis_mpi">Source Code</a><br></h5>
                             <div style="text-align: left;">
-                            <h2>Intro</h2>
+                            <h3>Intro</h3>
                             <div>
                                 This project aims for implementing a simple, <b>parallelized</b> application leveraging <b>High-Performance Computing(HPC)</b> facility —— <a href="https://dashboard.hpc.unimelb.edu.au/">SPARTAN</a>.
                                 The application will analysis 20GB data from Twitter to identify the top10 most frequenly occurring hashtags 
@@ -618,9 +620,9 @@
                                 這個專案的目的是實作出一個簡單的<b>平行分析</b>應用程式，並且在<a href="https://dashboard.hpc.unimelb.edu.au/">SPARTAN</a><b>（HPC架構伺服器）</b>上，分析20G的Twitter資料，找到前十名的hashtag以及tweet中所使用的語言。
                             </div>
                             <br>
-                            <h2>Method</h2>  
                             <br>
-                            <h5>Message Passing Interface (MPI)</h5>
+                            <h3>Method</h3>  
+                            <h4><b>1. Message Passing Interface (MPI)</b></h4>
                             <div>
                             <b>MPI communication protocol</b> is applied to implement <b>parallelism</b>.
                             To be specific, A python mpi library, mpi4py, is used in our code.
@@ -638,7 +640,7 @@
                                 每一個core會進行相同的運算，運算結束之後透過mpi將結果回傳到特定一個core將結果搜集起來。
                             </div>
                             <br>
-                            <h5>Slurm</h5>
+                            <h4><b>2. Slurm</b></h4>
                             <div>
                             Slurm is used as the resource manager and job scheduler on SPARTAN.
                             The slurm file include the "SBATCH" options and the other command then run the following command on server.
@@ -659,8 +661,11 @@
 
 
                             <br>
-                            <h2>Result</h2>
+                            <br>
+                            <h3>Result</h3>
                             <img src="images/projects/mpi_results.png">
+                            <div style="text-align: center;">Figure1. Performance of each config</div>
+                            <br>
                             <div>
                             We run on two partitions (cloud & physical) and three set of resources (1n1c, 1n8c, 2n8c) respectively.
                             (Note: 2n8c means 2 nodes 4 cores on each nodes.)
@@ -674,13 +679,6 @@
                             </div>
                             <br>
                             <div>
-                            On the other hand, our parallel analysis is embarrassingly parallel.
-                            Therefore, number of nodes did not benefit to our performance in this case (1n8c vs. 2n8c).
-                            On the cloud partition, the performance on 2n8c even worse than 1n8c 
-                            due to the communication cost.
-                            </div>
-                            <br>
-                            <div>
                                 我們分別在兩個不同的partition(cloud和physical)上跑我們的程式，並且配置了1n1c, 1n8c, 2n8c的雲算資源
                                 （註：2n8c為兩個nodes各有4個cores）。
                                 從圖表中可以看到，我們的平行分析因為平分了各個core的工作量，
@@ -688,6 +686,13 @@
                                 整體而言，cloud的表現較physical差，這是因為兩個partition的網路速度不同。
                                 根據SPARTAN的文件，一般而言cloud較適合做只需要單一node的作業。
                                 而physical的網路速度快、延遲時間小，適合做多個nodes的作業。
+                            </div>
+                            <br>
+                            <div>
+                            On the other hand, our parallel analysis is embarrassingly parallel.
+                            Therefore, number of nodes did not benefit to our performance in this case (1n8c vs. 2n8c).
+                            On the cloud partition, the performance on 2n8c even worse than 1n8c 
+                            due to the communication cost.
                             </div>
                             <br>
                             <div>
