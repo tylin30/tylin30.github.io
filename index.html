@@ -580,11 +580,7 @@
                                             謝謝模型建構與資訊學實驗室的前輩們——蒲冠吉、王翊豪，一同開發了雛形，同時給予許多我技術的協助。
                                             謝謝一路上給予我支持的朋友以及家人們，我很幸運能夠碰到這麼多願意幫助我的人。</div>
                                         <br>
-
                                     </p>
-                                    
-                                    
-
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -738,169 +734,520 @@
                     </div>
                   </div>
             </div>
-
             <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+        </div>
+        <!-- End .project -->
 
-                <!-- AI: Deceptive Path-Planning -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/projects/dceceptive_path_planning.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>AI: Deceptive Path-Planning</h3>
-                        <p>
-                            Implement of Deceptive Path-Planning.
-                            <br>
-                            Masters, P., & Sardina, S. (2017, August). Deceptive Path-Planning. In IJCAI (pp. 4368-4375).
-                            <br>
-                            <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/Search_Algorithms">Source Code</a><br>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/fskB1-H4dZ4">πd2 Strategy Demo</a><br>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/g-pplKHdb8o">πd3 Strategy Demo</a><br>
-                        </p>
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dceceptive">
+
+        <!-- AZUL -->
+        <div class="project shadow-large">
+            <div class="project-image">
+                <img src="images/projects/Azul.jpeg" />
+            </div>
+            <!-- End .project-image -->
+
+            <div class="project-info">
+                <h3>Azul AI Agent</h3>
+                <p>
+                    Development of AI agent for competing in board game -- Azul. We developed four agents based on DFS, Greedy Search, MCTS, Minimax respectively.
+                    Our final agent was Minimax with alpha-beta pruning, customized pruning and fine-tuned utility function. 
+                    Also, we used some tricks to reduce the computing time so we could expand more nodes within the time constraint.
+                    We ranked 8 out of 64 in the tournament.
+                    <h5><i class="fa fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/AI-Minimax-Azul">Source Code</a><br></h5>
+                    <h5><i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://www.youtube.com/playlist?list=PLJEGHkY5PWRimRr_RCXm0ziVDkLYVva8o">Agents Video Demo Playlist</a></h5>
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#azul">
                     View Details
                 </button>
                   
                   <!-- Modal -->
-                  <div class="modal fade" id="dceceptive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal fade" id="azul" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title">AI: Deceptive Path-Planning</h5>
+                          <h5 class="modal-title">Azul AI Agent</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                            <img class="img-fluid rounded mb-5" src="images/projects/dceceptive_path_planning.png" />
-                            <p class="mb-5">
-                                <h5><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/Search_Algorithms">Source Code</a><br></h5>
-                                <div style="text-align: left;">
-                                    <div>
-                                    The following videos are the implementation of deceptive path-planning via πd2 and πd3 strategy respectively in Masters and Sardina's paper.
-                                    <br>
-                                    <br>
-                                    The main idea of deceptive path-planning is to generate a path that makes it difficult 
-                                    for an outside observer to guess which goal is the true goal. 
-                                    In this map, the food in the upper left corner is the true goal, 
-                                    the food in the upper right corner is the fake goal.
-                                    <br>
-                                    <br>
-                                    Could you tell the intention of the Pacman in the very beginning &#128527?
-                                    Which strategy is more deceptive?
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div>下面的影片是實作Masters和Sardina的deceptive path-planning這篇paper中 πd2 和 πd3 策略的demo。</div>
-                                    <br>
-                                    <div>Deceptive path-planning的主要想法是，希望能產生一條路徑，
-                                        在行走的過程中，盡可能地讓觀察者無法辨識出agent真正要去的目標是哪一個。
-                                        在demo影片中，左上角的食物是真正的目標，右上角的食物是假的目標。</div>
-                                    <br>
-                                    <div>
-                                        你有辦法在影片一開始的時候，就知道pacman真正的目標是什麼嗎&#128527？
-                                        哪一個策略更能騙到你呢？
-                                    </div>
-                                    </div>
-                                    <br>
-                                    <br>
+                            <!-- Img -->
+                            <img width="100%" class="img-fluid rounded mb-5" src="images/projects/Azul.jpeg" alt="" />
+                            
+                            <!-- Links -->
+                            <h5><i class="fa fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/AI-Minimax-Azul">Source Code</a><br></h5>
+                            <h5><i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://www.youtube.com/playlist?list=PLJEGHkY5PWRimRr_RCXm0ziVDkLYVva8o">Agents Video Demo Playlist</a></h5>
+                            
+                            
+                            <!-- Intro -->
+                            <h3 style="text-align: left;">1. Intro</h3>
+                            <div style="text-align: left;">
+                                In this project, an artificial intelligent agent was developed to compete in a board game Azul in a two-player scenario. 
+                                Azul is a zero sum, mostly <b>deterministic</b> (with exceptions of start round factory display restocking), 
+                                <b>turn-taking, multi-player game with perfect information.</b> 
+                                In Azul, players take tile(s) from the factories to place on the pattern lines in their turn. 
+                                At the end of round, players move tiles from their complete pattern lines over to their walls and earn the scores
+                                (<a href="https://www.ultraboardgames.com/azul/game-rules.php">see all official rules</a>).
+                                To build an agent for this game, we develop a game theoretic <b>minimax</b> agent utilising a heuristic function to estimate the reward of a given state. 
+                                We also explore several algorithms including a <b>depth first search, shallow Greedy search, Monte Carlo Tree Search</b>. 
+                                The following sections will introduce the details of each algorithm, 
+                                how we build the tournament agent, evaluation of performance, and discussion of our agent in the Azul framework.
+                            </div>
+                            <br>
+                            <br>
 
-                                    Reference:<br>
-                                    Masters, P., & Sardina, S. (2017, August). Deceptive Path-Planning. In IJCAI (pp. 4368-4375). <i class="far fa-hand-point-right"></i>
-                                    <a href="https://pdfs.semanticscholar.org/1b3e/73a4396c460ce05577b5e0dfa651f978720e.pdf">PDF</a>
+                            <!-- Method -->
+                            <h3 style="text-align: left;"> 2. Attempted Agents</h3>
+                            <div>
+                                <img src="images/projects/azul_agent_summary.png"> 
+                                <div style="text-align: center;">Figure1. Brief Overview of all Agents (We will introduce Greedy, MCTS, Minimax in the following)</div>
+                            </div>
+                            <br>
+                                <h4 style="text-align: left;"><b>2.1 Simple Greedy Search</b></h4>
+                                <div style="text-align: left;">
+                                As stated in the depth first search section, 
+                                blind search was not a good approach to take when creating an agent to play a game of azul due to the enormous state space. 
+                                In order to utilise domain knowledge, a simple greedy agent was implemented. 
+                                Given a game state and a set of legal moves, 
+                                a heuristic function H (s, a) a function that returned a real number was designed, 
+                                where s is a game state, and a is a legal action. The agent would then play a move via the following policy:
+                                <!-- formula -->
                                 </div>
                                 <br>
                                 <br>
-                                <iframe src="https://www.youtube.com/embed/fskB1-H4dZ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div style="text-align: center;">πd2 Strategy Demo in Tiny Maze</div>
+                                <div style="text-align: left;">
+                                <b>2.1.1 Heuristic function</b><br>
+
+                                This heuristic function attempted to estimate how ‘good’ a move was to make. 
+                                The heuristic function applied a move a to state s, 
+                                and scored that move using the game states score function to simulate an end of round given that game state and return the player score, 
+                                thus returning the score of the move a. 
+                                This heuristic function also took into consideration the number of tiles a player would take from the tile factory, 
+                                scoring moves that take more tiles from a factory higher than taking less moves from the factory.
+                                </div>
                                 <br>
                                 <br>
-                                <iframe src="https://www.youtube.com/embed/g-pplKHdb8o?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div style="text-align: center;">πd3 Strategy Demo in Tiny Maze</div>
+                                <div style="text-align: left;">
+                                <b>2.1.2 Results</b><br>
+
+                                Over 1000 games this greedy player (using heuristic v.1.0) had a win rate of 82.20% versing the naive_player. 
+                                As a result, this agent was used as the baseline agent for testing the other approaches. 
+                                A downside to this approach is that it only takes into consideration its current move and does not look ahead to help guide its decision.
+                                </div>
+                                <br>
+                                <br>
                                 
-                            </p>
-    
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                            </div>
-                          </div>
+                                
+                                <h4 style="text-align: left;"><b>2.2 Monte Carlo Tree Search (UCT)</b></h4>
+                                <div style="text-align: left;">
+                                    <b>2.2.1 State space reasoning</b><br>
+                                    When choosing approaches, 
+                                    it was important to consider the state and action space of Azul. 
+                                    If we just consider the factory displays -- in a two player game of azul there are 5 factory displays with upto four tiles on each display. 
+                                    20 tiles from a tile bag initially consisting of 100 tiles (20 of each colour) are picked and distributed on each of the 5 factory displays. 
+                                    Using the formula for combinations with repetitions, 
+                                    there are 70 different combinations of picking 4 tiles using 5 colours. 
+                                    Thus choosing 5 factory displays from 70 different unique combinations leads to 16108764 different possible initial states. 
+                                    If we just consider one start configuration of an azul game with empty wall lines. 
+                                    Let us assume that each factory tile contains 4 tiles of different colours. 
+                                    Thus there are 20 different ways to choose a tile from the factory displays. 
+                                    Since there are 5 wall lines and the floor line to place the tile into, 
+                                    thus there are 6 different ways to play each tile - therefore there are 120 actions that the player can play. 
+                                    Suppose that we apply one action, and the resulting game state has 80 legal actions to play. 
+                                    Thus if we just consider these two moves there are a total of 120x80 different game states leading to 9600 game states with just two moves. 
+                                    Thus the state space of azul explodes very fast. 
+                                    Thus doing a full tree search across AZUL that spans multiple rounds would take too long to compute. 
+                                    Thus the search technique had to be smart in the way it would pick which moves to explore. 
+                                    It was decided that a simulation based Monte Carlo Tree Search would be implemented in order to try pick a feasible move to make. 
+                                    Furthermore the strict evaluation time limit was not a problem with MCTS as it is an anytime algorithm.
+                                </div>
+                                <br>
+                                <br>
+
+                                <!-- <h4 style="text-align: left;"><b>2.2.2 MCTS Implementation</b></h4> -->
+                                <div style="text-align: left;">
+                                    <b>2.2.2 MCTS Implementation</b><br>
+                                    The variant of MCTS implemented was the Upper Confidence Trees algorithm (Brown, C.B et al. 2012) using UCB-1 to guide exploration and exploitation of the game tree. 
+                                    At the end of a playout the reward of the player for that round, 
+                                    or a large constant multiple of the difference in scores between our player and the opponent was returned if it was the end of the game.
+                                    <br>
+                                    <br>
+                                    MCTS was implemented using a full game roll out over 100 games against the naive_player, 
+                                    a win rate of 38% was achieved. 
+                                    Due to the stochasticity introduced due to the randomisation of factory displays, 
+                                    each roll out would have different factory display configurations thus leading to a wide variability in the games that were being played. 
+                                    There was a very low chance that a roll out would produce two games consisting of the same factory display configurations. 
+                                    We thought that MCTS was not able to converge to a reasonable reward value. 
+                                    Thus in order to try and increase the win rate, 
+                                    roll outs were terminated at the end of the current round thus MCTS would only be able to predict moves based on the current round. 
+                                    As a result, a win rate of 73% with an average score of against the naive agent was observed over 100 games.
+                                    <br>
+                                    <br>
+                                    The performance of MCTS is heavily dependent on the number of simulations it is able to do. 
+                                    MCTS was able to expand between 200-600 nodes/sec. Considering the state space of AZUL, 
+                                    MCTS is not exploring enough of the tree. 
+                                    A significant bottleneck with this implementation of MCTS and the implementation of the game model 
+                                    is deepcopying of game states to produce child nodes - this is a slow process that significantly impacts the number of nodes that we can expand. 
+                                    The following table shows the evaluation of our MCTS agent against 3 agents using different time evaluations.
+                                    <br>
+                                    <br>
+                                    <table style="border:1px solid black;border-collapse:collaps;margin-left: auto;margin-right: auto;">
+                                        <tbody>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">Evaluation Time</td>
+                                                <td style="border:1px solid black;">Random Agent</td>
+                                                <td style="border:1px solid black;">Naive Agent</td>
+                                                <td style="border:1px solid black;">Greedy Agent</td>
+                                            </tr>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">200ms</td>
+                                                <td style="border:1px solid black;">100%</td>
+                                                <td style="border:1px solid black;">42%</td>
+                                                <td style="border:1px solid black;">12%</td>
+                                            </tr>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">500ms</td>
+                                                <td style="border:1px solid black;">100%</td>
+                                                <td style="border:1px solid black;">63%</td>
+                                                <td style="border:1px solid black;">19%</td>
+                                            </tr>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">1000ms</td>
+                                                <td style="border:1px solid black;">100%</td>
+                                                <td style="border:1px solid black;">73%</td>
+                                                <td style="border:1px solid black;">27%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align: center;">Table1. Win rate of MCTS against different agents across various time constraint</div>
+                                    <br>
+                                    <br>
+                                    MCTS is capable of producing relatively well informed actions that can beat up to the naive player. 
+                                    But where it breaks it when it verses a purely greedy player. 
+                                    As we increase the evaluation time, 
+                                    the win rate against the Greedy Player does increase, 
+                                    but it is far from acceptable. 
+                                    Unlike minimax MCTS does not assume that the opponent is behaving rationally, 
+                                    thus this cannot be attributed to this result. 
+                                    It must be that the number of states that MCTS is evaluating is not enough for it to make a confident decision as to what move it should make. 
+                                    Furthermore as simulations are only going to the end of the round, 
+                                    the MCTS agent cannot infer moves past the current round it is playing. 
+                                    To try to increase the performance of the agent, 
+                                    a lightweight rollout was then tried, 
+                                    utilising the naive_player policy for the opponent agent. 
+                                    As a result the win rate of the MCTS agent increased to 30% using this rollout.
+                                </div>
+                                <br>
+                                <br>
+
+                                
+                                <h4 style="text-align: left;"><b>2.3 Final Agent - (ɑ-β)-Minimax with heavy move pruning and move ordering</b></h4>
+                                <h4 style="text-align: left;"><b>2.3.1 Minimax description</b></h4>
+                                <div style="text-align: left;">
+                                    Azul is a mostly deterministic (except for round initiations) two player adversarial game with perfect information. 
+                                    Thus to leverage this, a minimax agent was developed. 
+                                    The minimax algorithm is a game theoretic algorithm that assumes that the opponent is also playing rationally. 
+                                    Here rationally is defined as an agent chooses a move which maximises their reward given that the opponent is trying to minimise the agents reward. 
+                                    The minimax algorithm searched over the same state space as described in 2.1.1. 
+                                    As a result, minimax inherently takes into consideration opponents' moves unlike the greedy agent we designed. 
+                                    Pure minimiax is an exhaustive tree search algorithm having exponential time complexity hence is not suitable for azul. 
+                                    Instead of building an entire game tree, the state space was limited to the end of the current round. 
+                                    Thus making each search fully deterministic as we would not need to consider randomised factory displays on new rounds.
+                                </div>
+                                <br>
+                                <br>
+                                <h4 style="text-align: left;"><b>2.3.2 Optimisations</b></h4>
+                                <div style="text-align: left;">
+                                    An optimization technique called alpha-beta pruning (Knuth, D. E., et al., 1975) was implemented -- 
+                                    the main idea is that we propagate/update the lower bound and upper bound utilities into relevant nodes, 
+                                    thus pruning future nodes that would not affect the result. In the best case, the time complexity of alpha-beta is O(b^(d/2)) 
+                                    and the average case is O(b^(3d/4)) (Russell, S., & Norvig, P., 2002). 
+                                    This best case scenario refers to having perfect move ordering (using an oracle to infer minimax values for that state) when exploring states. 
+                                    Furthermore a depth cutoff variant was implemented, 
+                                    whereby if a node was at the depth cutoff, the ‘goodness’ of that state was estimated using a utility function. 
+                                    Even with these optimisations and heuristics, the agent was not able to perform move evaluations to a depth of 2 within the given time frame. 
+                                    Thus the following changes were made -- first we ordered the set of actions using the utility function to score each move, 
+                                    and then we greedily took the top n number of moves to search with at each depth. 
+                                    Hence trying to approximate move ordering as well as heavy pruning to significantly decrease the width of each level in the tree, similar to doing a beam search. 
+                                    Thus the final minimax agent was not a purely optimal agent as we were greedy in the choice of moves we wanted to expand, 
+                                    thereby discounting a proportion of the search tree where the real optimal minimax value could lie in. 
+                                    Thus our model has two hyperparameters -the depth d we want to explore, 
+                                    and the width w representing the top w moves we want to explore at any given state. 
+                                    The width and depth of the agent was determined experimentally, 
+                                    by choosing the values of w and d that give us the best win rate against the greedy agent. 
+                                    Our final agent was set to explore to a depth of 4 moves using a maximum move width of 5.
+                                </div>
+                                <br>
+                                <br>
+                                <h4 style="text-align: left;"><b>2.3.3 Utility function</b></h4>
+                                <div style="text-align: left;">
+                                    The performance of the minimax function is determined by the utility function. 
+                                    Initially the utility function used by the minimax agent utilised the heuristic function used in the greedy player. 
+                                    Essentially the utility function attempted to score each state just as if that was the final state in the round. 
+                                    For example, given all empty wall lines and all empty pattern lines, 
+                                    if a player made a choice that would fill an entire wall line, 
+                                    the utility function would return a value of 1 as it would result in placing one tile on the wall. 
+                                    By doing it this way, the utility function prefers placing tiles that would fill up an entire pattern line, 
+                                    and also prefer fill lines that correspond to placing tiles next to existing tiles in the wall line. 
+                                    This utility function served as a baseline utility function for our minimax agent.
+                                </div>
+                                <br>
+                                <br>
+                                <h4 style="text-align: left;"><b>2.3.4 Utility function design</b></h4>
+                                <div style="text-align: left;">
+                                    Several utility functions were tried and tested in this agent but all failed to outperform the baseline utility function. 
+                                    As this utility function involved deepcopying the game state, the utility function was inherently slow. 
+                                    Thus as the algorithm was exponential in time complexity, 
+                                    this would result in an exponential amount of deep copy calls being called thus introducing a big bottle neck to minimax. 
+                                    Thus an improvement to the baseline was attempted, 
+                                    this time instead of deepcopying the state it would try to infer the score of a move without deepcopying. 
+                                    Furthermore, attempts to capture end game scoring bonuses also were taken into consideration as extra features. 
+                                    On average this heuristic function would evaluate a game state 20 times faster than that of the baseline. 
+                                    Despite this it would result in a 40% win rate against the greedy player thus failing to outperform the baseline heuristic which had a win rate of 63%. 
+                                    This could be attributed to sub-optimal weight assignments in the function (placing too much weight on the future/bonus reward features rather than our immediate reward).
+                                </div>
+                                <br>
+                                <table style="border:1px solid black;border-collapse:collaps;margin-left: auto;margin-right: auto;">
+                                    <tbody>
+                                        <tr style="border:1px solid black;">
+                                            <td style="border:1px solid black;">Version</td>
+                                            <td style="border:1px solid black;">Heuristic v1</td>
+                                            <td style="border:1px solid black;">Heuristic v2</td>
+                                        </tr>
+                                        <tr style="border:1px solid black;">
+                                            <td style="border:1px solid black;">Time</td>
+                                            <td style="border:1px solid black;">0.00139s</td>
+                                            <td style="border:1px solid black;">0.00006412</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div style="text-align: center;">Table2. Test of Computing Time for Each Heuristic</div>
+                                <br>
+                                <br>
+
+                                <h4 style="text-align: left;"><b>2.3.4 Utility function discussion</b></h4>
+                                <div style="text-align: left;">
+                                    3.3.2 Utility function discussion Designing the utility function for minimax was deemed to be the most challenging part. 
+                                    Not only did it have to find strong features for azul, the ones that we used did not seem to either be hard to comprehend in code, 
+                                    difficult/slow to compute or we could not optimise the weights of the function well enough for it to perform well against the baseline. 
+                                    Overall fine tuning the weights of the minimax utility function was done experimentally by letting the agent perform multiple games against the greedy agent. 
+                                    This was not an efficient way of adjusting utility weights. We could have used temporal difference learning such as td-leaf (Baxter, J., et al., 1999).
+                                </div>
+                                <br>
+                                <br>
+
+                                <h3 style="text-align: left;"><b>3. Result</b></h3>
+                                <div style="text-align: left;">
+                                    Using the baseline utility function, 
+                                    the following table outlines the winrate of the minimax agent against the other agents either developed by us or already provided.
+                                    <br>
+                                    <br>
+                                    <table style="border:1px solid black;border-collapse:collaps;margin-left: auto;margin-right: auto;">
+                                        <tbody>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">vs.</td>
+                                                <td style="border:1px solid black;">Random Agent</td>
+                                                <td style="border:1px solid black;">Naive Agent</td>
+                                                <td style="border:1px solid black;">Greedy Agent</td>
+                                                <td style="border:1px solid black;">MCTS (UCT)</td>
+                                            </tr>
+                                            <tr style="border:1px solid black;">
+                                                <td style="border:1px solid black;">Minimax</td>
+                                                <td style="border:1px solid black;">100%</td>
+                                                <td style="border:1px solid black;">81%</td>
+                                                <td style="border:1px solid black;">63%</td>
+                                                <td style="border:1px solid black;">70%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div style="text-align: center;">Table3. Win Rate of Minimax Agent Against Others</div>
+                                    <br>
+                                    Here we can see that this agent outperforms all other agents that have been developed so far, 
+                                    winning the majority of games against each agent. Because of this, 
+                                    this agent was chosen as the final agent to be developed to play the game. 
+                                    As the table shows, 
+                                    our final minimax agent was able to beat both the greedy agent as well as the mcts agent. 
+                                    Both the random and naive agents were also outperformed. 
+                                    Section 4 outlines the evaluation of our agent against other AI agents and staff created agents.
+                                </div>
+                                <br>
+                                <br>
+                                <h3 style="text-align: left;"><b>4. Tournament</b></h3>
+                                <div>
+                                    <img src="images/projects/azul_tournament.png"> 
+                                    <div style="text-align: center;">Figure2. tournament result (Rank 8 out of 64)</div>
+                                </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                         </div>
                       </div>
-                </div>
-    
-                <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- Social Information Survey -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/projects/SF.png" />
                     </div>
-                    <!-- End .project-image -->
+                  </div>
+            </div>
+            <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
 
-                    <div class="project-info">
-                        <h3>Social Information Survey</h3>
-                        <p>
-                            It is a customized survey which applies website technique to demonstrate a non-traditional psychology survey (Inclusion of other in the self scale, IOS).
+
+        <!-- AI: Deceptive Path-Planning -->
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/projects/dceceptive_path_planning.png" />
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>AI: Deceptive Path-Planning</h3>
+                    <p>
+                        Implement of Deceptive Path-Planning.
+                        <br>
+                        Masters, P., & Sardina, S. (2017, August). Deceptive Path-Planning. In IJCAI (pp. 4368-4375).
+                        <br>
+                        <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/Search_Algorithms">Source Code</a><br>
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/fskB1-H4dZ4">πd2 Strategy Demo</a><br>
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/g-pplKHdb8o">πd3 Strategy Demo</a><br>
+                    </p>
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dceceptive">
+                View Details
+            </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="dceceptive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">AI: Deceptive Path-Planning</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid rounded mb-5" src="images/projects/dceceptive_path_planning.png" />
+                        <p class="mb-5">
+                            <h5><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/tylin30/Search_Algorithms">Source Code</a><br></h5>
+                            <div style="text-align: left;">
+                                <div>
+                                The following videos are the implementation of deceptive path-planning via πd2 and πd3 strategy respectively in Masters and Sardina's paper.
+                                <br>
+                                <br>
+                                The main idea of deceptive path-planning is to generate a path that makes it difficult 
+                                for an outside observer to guess which goal is the true goal. 
+                                In this map, the food in the upper left corner is the true goal, 
+                                the food in the upper right corner is the fake goal.
+                                <br>
+                                <br>
+                                Could you tell the intention of the Pacman in the very beginning &#128527?
+                                Which strategy is more deceptive?
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div>下面的影片是實作Masters和Sardina的deceptive path-planning這篇paper中 πd2 和 πd3 策略的demo。</div>
+                                <br>
+                                <div>Deceptive path-planning的主要想法是，希望能產生一條路徑，
+                                    在行走的過程中，盡可能地讓觀察者無法辨識出agent真正要去的目標是哪一個。
+                                    在demo影片中，左上角的食物是真正的目標，右上角的食物是假的目標。</div>
+                                <br>
+                                <div>
+                                    你有辦法在影片一開始的時候，就知道pacman真正的目標是什麼嗎&#128527？
+                                    哪一個策略更能騙到你呢？
+                                </div>
+                                </div>
+                                <br>
+                                <br>
+                                Reference:<br>
+                                Masters, P., & Sardina, S. (2017, August). Deceptive Path-Planning. In IJCAI (pp. 4368-4375). <i class="far fa-hand-point-right"></i>
+                                <a href="https://pdfs.semanticscholar.org/1b3e/73a4396c460ce05577b5e0dfa651f978720e.pdf">PDF</a>
+                            </div>
                             <br>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/S3Qufq1L814">Website Demo</a>
+                            <br>
+                            <iframe src="https://www.youtube.com/embed/fskB1-H4dZ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="text-align: center;">πd2 Strategy Demo in Tiny Maze</div>
+                            <br>
+                            <br>
+                            <iframe src="https://www.youtube.com/embed/g-pplKHdb8o?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="text-align: center;">πd3 Strategy Demo in Tiny Maze</div>
+                            
                         </p>
 
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sf">
-                    View Details
-                    </button>
-                    <!-- Modal -->
-                  <div class="modal fade" id="sf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">AI: Deceptive Path-Planning</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
                         </div>
-                        <div class="modal-body">
-                            <img class="img-fluid rounded mb-5" src="images/projects/SF.png" />
-                            <p class="mb-5">
-                                <div style="text-align: left;">
-                                    The following video is the demo of one of my website project.
-                                    It is a customized survey which applies website technique to demonstrate a non-traditional psychology survey (Inclusion of other in the self scale, IOS).
-                                </div>
-                                <br>
-                                <div style="text-align: left;">
-                                    這個影片是我的其中一個網頁作品，
-                                    為了使用非傳統心理學問卷IOS(Inclusion of other in the self scale)而客製化的響應式網頁。
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                                <div style="text-align: left;">Reference: Aron, A., Aron E. N., & Smollan, D. (1992). Inclusion of other in the self scale and the structure of interpersonal closeness. Journal of Personality and Social Psychology, 63, 596-612.</div>
-                                <br>
-                                <br>
-                                <iframe src="https://www.youtube.com/embed/S3Qufq1L814?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <div style="text-align: center;">Responsive Website Demo</div>
-
-                            </p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                            </div>
-                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                         </div>
                       </div>
-                    <!-- End .project-info -->
+                    </div>
+                  </div>
+            </div>
+
+            <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+            <!-- Social Information Survey -->
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/projects/SF.png" />
                 </div>
-                <!-- End .project -->
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Social Information Survey</h3>
+                    <p>
+                        It is a customized survey which applies website technique to demonstrate a non-traditional psychology survey (Inclusion of other in the self scale, IOS).
+                        <br>
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/S3Qufq1L814">Website Demo</a>
+                    </p>
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sf">
+                View Details
+                </button>
+                <!-- Modal -->
+              <div class="modal fade" id="sf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">AI: Deceptive Path-Planning</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid rounded mb-5" src="images/projects/SF.png" />
+                        <p class="mb-5">
+                            <div style="text-align: left;">
+                                The following video is the demo of one of my website project.
+                                It is a customized survey which applies website technique to demonstrate a non-traditional psychology survey (Inclusion of other in the self scale, IOS).
+                            </div>
+                            <br>
+                            <div style="text-align: left;">
+                                這個影片是我的其中一個網頁作品，
+                                為了使用非傳統心理學問卷IOS(Inclusion of other in the self scale)而客製化的響應式網頁。
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div style="text-align: left;">Reference: Aron, A., Aron E. N., & Smollan, D. (1992). Inclusion of other in the self scale and the structure of interpersonal closeness. Journal of Personality and Social Psychology, 63, 596-612.</div>
+                            <br>
+                            <br>
+                            <iframe src="https://www.youtube.com/embed/S3Qufq1L814?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="text-align: center;">Responsive Website Demo</div>
+                        </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
             </div>
         </div>
     </div>
